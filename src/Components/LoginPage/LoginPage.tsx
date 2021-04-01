@@ -7,7 +7,7 @@ import styles from './LoginPage.module.css';
 export default function LoginPage() {
 
     const googleLogin = () => {
-        window.open("https://criel.herokuapp.com/auth/google", "_self");
+        window.location.href= "https://criel.herokuapp.com/auth/google"
     }
 
     const githubLogin = () => {
