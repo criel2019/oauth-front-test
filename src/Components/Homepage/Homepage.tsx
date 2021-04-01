@@ -12,7 +12,7 @@ export default function Homepage() {
                 userObject ? (
                     <h1>Welcome back {userObject.username}</h1>
                 ) : (
-                        <h1>Welcome To MY Website</h1>
+                        <h1>이제 제발 좀 되라..</h1>
                     )
             }
         </div>
