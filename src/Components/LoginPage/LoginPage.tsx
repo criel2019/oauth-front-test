@@ -11,11 +11,11 @@ export default function LoginPage() {
     }
 
     const githubLogin = () => {
-        window.open("https://criel.herokuapp.com/auth/github", "_self");
+        window.open("https://criel.herokuapp.com/auth/kakao", "_self");
     }
     
     const twitterLogin = () => {
-        window.location.href = "https://criel.herokuapp.com/auth/twitter"
+        window.location.href = "https://criel.herokuapp.com/auth/naver"
     }
 
 
