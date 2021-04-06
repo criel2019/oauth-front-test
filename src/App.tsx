@@ -15,7 +15,7 @@ function App() {
         <Route path='/' exact component={Homepage} />
         {
           userObject ? null : (
-            <Route path='/login' component={LoginPage} />
+            <Route path='/user/login' component={LoginPage} />
           )
         }
       </Switch>
