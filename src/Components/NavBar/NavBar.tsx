@@ -10,7 +10,7 @@ export default function NavBar() {
     const userObject = useContext(myContext) as IUser;
 
     const logout = () => {
-        axios.get("https://criel.herokuapp.com/user/auth/logout", {
+        axios.get("https://criel.herokuapp.com/auth/logout", {
             withCredentials: true
         }).then((res: AxiosResponse) => {
             if (res.data === "done") {
@@ -27,7 +27,7 @@ export default function NavBar() {
                     userObject ? (
                     <li onClick={logout}>Logout </li>
                     ) : (
-                        <li><Link to='/user/login'>Login</Link></li>
+                        <li><Link to='/login'>Login</Link></li>
                     )
                 }
             </ul>
