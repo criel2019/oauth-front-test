@@ -7,15 +7,15 @@ import styles from './LoginPage.module.css';
 export default function LoginPage() {
 
     const googleLogin = () => {
-        window.location.href= "https://criel.herokuapp.com/user/auth/google"
+        window.location.href= "https://criel.herokuapp.com/auth/google"
     }
 
     const githubLogin = () => {
-        window.open("https://criel.herokuapp.com/user/auth/kakao", "_self");
+        window.open("https://criel.herokuapp.com/auth/kakao", "_self");
     }
     
     const twitterLogin = () => {
-        window.location.href = "https://criel.herokuapp.com/user/auth/naver"
+        window.location.href = "https://criel.herokuapp.com/auth/naver"
     }
 
 
