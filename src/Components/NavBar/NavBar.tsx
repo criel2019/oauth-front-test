@@ -27,7 +27,7 @@ export default function NavBar() {
                     userObject ? (
                     <li onClick={logout}>Logout </li>
                     ) : (
-                        <li><Link to='/login'>Login</Link></li>
+                        <li><Link to='/user/login'>Login</Link></li>
                     )
                 }
             </ul>
