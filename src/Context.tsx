@@ -8,7 +8,7 @@ export default function Context(props: any) {
     const [userObject, setUserObject] = useState<any>();
 
     useEffect(() => {
-        axios.get("https://criel.herokuapp.com/user/getuser", { withCredentials: true }).then((res: AxiosResponse) => {
+        axios.get("https://criel-db-test.herokuapp.com/user/getuser", { withCredentials: true }).then((res: AxiosResponse) => {
             console.log(res);
             if (res.data) {
                 setUserObject(res.data);
