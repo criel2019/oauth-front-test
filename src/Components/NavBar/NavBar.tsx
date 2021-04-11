@@ -10,7 +10,7 @@ export default function NavBar() {
     const userObject = useContext(myContext) as IUser;
 
     const logout = () => {
-        axios.get("https://criel.herokuapp.com/user/auth/logout", {
+        axios.get("https://criel-db-test.herokuapp.com/user/auth/logout", {
             withCredentials: true
         }).then((res: AxiosResponse) => {
             if (res.data === "done") {
