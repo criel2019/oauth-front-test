@@ -1,7 +1,7 @@
 import React from 'react'
 import googleImage from '../../assets/googleImage.png';
-import githubImage from '../../assets/githubImage.png';
-import twitterImage from '../../assets/twitterImage.png';
+import naverImage from '../../assets/naverImage.png';
+import kakaoImage from '../../assets/kakaoImage.png';
 import styles from './LoginPage.module.css';
 
 export default function LoginPage() {
@@ -10,11 +10,11 @@ export default function LoginPage() {
         window.location.href= "https://criel-db-test.herokuapp.com/user/auth/google"
     }
 
-    const githubLogin = () => {
+    const kakaoLogin = () => {
         window.open("https://criel-db-test.herokuapp.com/user/auth/kakao", "_self");
     }
     
-    const twitterLogin = () => {
+    const naverLogin = () => {
         window.location.href = "https://criel-db-test.herokuapp.com/user/auth/naver"
     }
 
@@ -28,13 +28,13 @@ export default function LoginPage() {
                     <p>Login With Google</p>
                 </div>
 
-                <div className={`${styles.googleContainer} ${styles.githubContainer}`} onClick={githubLogin}>
-                    <img src={githubImage} alt="Github Icon" />
+                <div className={`${styles.googleContainer} ${styles.githubContainer}`} onClick={kakaoLogin}>
+                    <img src={kakaoImage} alt="Github Icon" />
                     <p>Login With Github</p>
                 </div>
 
-                <div className={`${styles.googleContainer} ${styles.twitterContainer}`} onClick={twitterLogin}>
-                    <img src={twitterImage} alt="Twitter Icon" />
+                <div className={`${styles.googleContainer} ${styles.twitterContainer}`} onClick={naverLogin}>
+                    <img src={naverImage} alt="Twitter Icon" />
                     <p>Login With Twitter</p>
                 </div>
 
