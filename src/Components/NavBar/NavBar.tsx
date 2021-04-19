@@ -14,7 +14,7 @@ export default function NavBar() {
         axios.get("https://criel-db-test.herokuapp.com/user/auth/logout", {
             headers: {
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "https://criel-db-test.herokuapp.com",
+                "Access-Control-Allow-Origin": "https://criel-db-test.herokuapp.com/user/auth/logout",
                 "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
                 "Access-Control-Allow-Headers": "X-Requested-With,content-type",
                 "Access-Control-Allow-Credentials": true,
